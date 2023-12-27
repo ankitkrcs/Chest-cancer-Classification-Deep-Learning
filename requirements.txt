@@ -1,0 +1,13 @@
+pandas
+dvc
+gdown
+mlflow
+tensorflow
+numpy
+matplotlib
+scipy
+ensure
+tqdm
+pyYAML
+seaborn
+Flask
