@@ -1,5 +1,6 @@
 import os
 from src.CNNclassifier.constants import *
+from pathlib import Path
 from src.CNNclassifier.utils.common import read_yaml, create_directories
 from src.CNNclassifier.entity.config_entity import (DataIngestionConfig,PrepareBaseModelConfig,TrainingConfig
 )
@@ -10,6 +11,8 @@ class ConfigurationManager:
         self,
         config_filepath=CONFIG_FILE_PATH,
         params_filepath=PARAMS_FILE_PATH):
+        print(f"Config file path: {config_filepath}")
+        print(f"Params file path: {params_filepath}")
 
         self.config = read_yaml(config_filepath)
         self.params = read_yaml(params_filepath)
